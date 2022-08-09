@@ -1,14 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Message from "./Message";
-import "./VendingMachine.css";
 
 function HomePage() {
     return (
-    <div
-    //   className="VendingMachine"
-    //   style={{ backgroundImage: `url(${vendingMachineImg})` }}
-    >
+    <div>
       <Message>
         <h1>hello, here is dog finder app</h1>
       </Message>
