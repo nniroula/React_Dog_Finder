@@ -1,8 +1,5 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-
-// import VendingMachine from "./VendingMachine";
-// import Soda from "./Soda";
 import HomePage from "./HomePage";
 import Perry from "./Perry";
 import Duke from './Duke';
@@ -78,6 +75,10 @@ function App() {
         </Route>
         <Route exact path="/dogs/whiskey">
             <Whiskey />
+        </Route>
+
+        <Route>
+            <HomePage />
         </Route>
 
       </Switch>
