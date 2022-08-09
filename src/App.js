@@ -5,6 +5,9 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 // import Soda from "./Soda";
 import HomePage from "./HomePage";
 import Perry from "./Perry";
+import Duke from './Duke';
+import Tubby from "./Tubby";
+import Whiskey from "./Whiskey";
 
 function App() {
 
@@ -66,6 +69,15 @@ function App() {
         </Route>
         <Route exact path="/dogs/perry">
             <Perry />
+        </Route>
+        <Route exact path="/dogs/duke">
+            <Duke />
+        </Route>
+        <Route exact path="/dogs/tubby">
+            <Tubby />
+        </Route>
+        <Route exact path="/dogs/whiskey">
+            <Whiskey />
         </Route>
 
       </Switch>

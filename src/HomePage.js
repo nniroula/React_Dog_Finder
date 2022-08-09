@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Message from "./Message";
 import "./VendingMachine.css";
-// import vendingMachineImg from "./VendingMachine.png";
 
 function HomePage() {
     return (
@@ -14,9 +13,10 @@ function HomePage() {
         <h1>hello, here is dog finder app</h1>
       </Message>
       <Message>
-        <h1><Link to="/dogs/perry">Perry</Link></h1>
-        {/* <h1><Link to="/chips">chips</Link></h1>
-        <h1><Link to="/sardines">fresh sardines</Link></h1> */}
+        <h3><Link to="/dogs/perry">Perry</Link></h3>
+        <h3><Link to="/dogs/duke">Duke</Link></h3>
+        <h3><Link to="/dogs/tubby">Tubby</Link></h3>
+        <h3><Link to="/dogs/whiskey">Whiskey</Link></h3>
       </Message>
     </div >
   );
