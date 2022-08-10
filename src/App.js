@@ -5,6 +5,7 @@ import Perry from "./Perry";
 import Duke from './Duke';
 import Tubby from "./Tubby";
 import Whiskey from "./Whiskey";
+// import Dog from "./Dog";
 
 function App() {
 
@@ -61,6 +62,7 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
+        {/* Multiple route is anti pattern, and is not the right way of rendering multiple components */}
         <Route path="/dogs" exact>
           <HomePage />
         </Route>
@@ -73,6 +75,7 @@ function App() {
         <Route exact path="/dogs/tubby">
             <Tubby />
         </Route>
+
         <Route exact path="/dogs/whiskey">
             <Whiskey />
         </Route>
@@ -80,6 +83,14 @@ function App() {
         <Route>
             <HomePage />
         </Route>
+
+        {/* React pattern for rendering multiple components */}
+
+        {/* <HomePage />
+
+        <Route path="/dogs/:dogName">
+            <Dog />
+        </Route> */}
 
       </Switch>
     </BrowserRouter>
