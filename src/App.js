@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import HomePage from "./HomePage";
-import Perry from "./Perry";
-import Duke from './Duke';
-import Tubby from "./Tubby";
-import Whiskey from "./Whiskey";
-// import Dog from "./Dog";
+// import Perry from "./Perry";
+// import Duke from './Duke';
+// import Tubby from "./Tubby";
+// import Whiskey from "./Whiskey";
+import Dog from "./Dog";
 
 function App() {
 
@@ -63,7 +63,7 @@ function App() {
     <BrowserRouter>
       <Switch>
         {/* Multiple route is anti pattern, and is not the right way of rendering multiple components */}
-        <Route path="/dogs" exact>
+        {/* <Route path="/dogs" exact>
           <HomePage />
         </Route>
         <Route exact path="/dogs/perry">
@@ -82,15 +82,15 @@ function App() {
 
         <Route>
             <HomePage />
-        </Route>
+        </Route> */}
 
         {/* React pattern for rendering multiple components */}
 
-        {/* <HomePage />
+        <HomePage />
 
         <Route path="/dogs/:dogName">
             <Dog />
-        </Route> */}
+        </Route> 
 
       </Switch>
     </BrowserRouter>
